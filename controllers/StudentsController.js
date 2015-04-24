@@ -11,3 +11,5 @@ signIn.controller('StudentsCtrl', function StudentsCtrl($scope) {
         { name: "Tim Tilliwink", signedIn: false },
         { name: "Woodsley Hardington", signedIn: false }
     ];
+
+});

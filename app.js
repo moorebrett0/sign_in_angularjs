@@ -6,10 +6,10 @@
           templateUrl: "partials/home.html"
       });
 
-      signIn.config(function($stateProvider) {
-          $stateProvider.state("home", {
-              url: "lists",
-              templateUrl: "partials/lists.html"
-          });
+      $stateProvider.state("students", {
+          url: "students-list",
+          templateUrl: "partials/lists.html",
+          controller: "StudentsCtrl"
       });
-  });
+  
+});
