@@ -6,10 +6,16 @@
           templateUrl: "partials/home.html"
       });
 
-      $stateProvider.state("students", {
+      $stateProvider.state("studentlist", {
           url: "students-list",
           templateUrl: "partials/lists.html",
           controller: "StudentsCtrl"
       });
-  
+
+      $stateProvider.state("filteredlist", {
+          url: "filtered",
+          templateUrl: "partials/filtered.html",
+          controller: "StudentsCtrl"
+      });
+
 });

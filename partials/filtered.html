@@ -1,0 +1,18 @@
+<div class="col-md-6" ng-show="students.length">
+    <h3>Has signed in</h3>
+    <ul>
+      <li ng-repeat="item in students" ng-show="item.signedIn">
+        {{item.name}} <a ng-click="studentSignIn(item)"> - Signed in -</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6" ng-show="students.length">
+    <h3>Students Not signed in.</h3>
+    <ul>
+      <li ng-repeat="student in students | filter:{signedIn: false}">
+        {{student.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+<a ui-sref="home">Back to main page</a>

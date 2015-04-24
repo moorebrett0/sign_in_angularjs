@@ -5,8 +5,11 @@
 <div ng-show="students.length">
     <h1>Students</h1>
         <ul>
-             <li ng-repeat="item in students">
-                {{ item.name }}<button ng-click="signIn()" class="btn btn-warning btn-xs">Sign In</button>
+             <li ng-repeat="item in students" >
+                {{ item.name }}<button ng-click="studentsHere(item)" ng-hide="item.signedIn" class="btn btn-warning btn-xs">Sign In</button>
+                <button ng-show="item.signedIn" class="btn btn-success btn-xs">I'm here</button>
+
             </li>
        </ul>
 </div>
+<a ui-sref="home">Back to main-page</a>
