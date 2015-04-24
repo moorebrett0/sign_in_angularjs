@@ -5,4 +5,11 @@
           url: "",
           templateUrl: "partials/home.html"
       });
+
+      signIn.config(function($stateProvider) {
+          $stateProvider.state("home", {
+              url: "lists",
+              templateUrl: "partials/lists.html"
+          });
+      });
   });
